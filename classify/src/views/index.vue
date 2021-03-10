@@ -34,6 +34,13 @@ export default {
               "parseInt('3', 2) 基数为2（2进制）表示的数中，最大值小于3，所以无法解析，返回NaN。",
           link: "https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/4"
         },
+        {
+          class: "js",
+          title: "什么是防抖和节流？有什么区别？如何实现",
+          answer: "防抖：动作绑定事件，动作发生后一定时间后触发事件，在这段时间内，如果该动作又发生，则重新等待一定时间再触发事件。" +
+                  "节流：动作绑定事件，动作发生后一段时间后触发事件，在这段时间内，如果动作又发生，则无视该动作，直到事件执行完后，才能重新触发。",
+          link: "https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/5"
+        },
       ]
     }
   }
