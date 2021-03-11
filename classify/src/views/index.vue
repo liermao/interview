@@ -1,12 +1,12 @@
 <template>
   <div>
-    <h2>面试题合集</h2>
+    <!--    <h2>面试题合集</h2>-->
     <ul class="list">
       <li v-for="(item,index) in list" :key="index">
         <span class="number">{{ index + 1 }}.</span>
         <span class="class">[{{ item.class }}]</span>
         <span class="title">{{ item.title }}</span>
-        <p>{{ item.answer }}<a v-if="item.link" :href=item.link>链接说明</a></p>
+        <p>{{ item.answer }}<a v-if="item.link" :href=item.link>(链接说明)</a></p>
         <div class="analysis" v-if="item.analysis" v-html="item.analysis"></div>
       </li>
     </ul>
@@ -38,7 +38,29 @@ export default {
           class: "js",
           title: "什么是防抖和节流？有什么区别？如何实现",
           answer: "防抖：动作绑定事件，动作发生后一定时间后触发事件，在这段时间内，如果该动作又发生，则重新等待一定时间再触发事件。" +
-                  "节流：动作绑定事件，动作发生后一段时间后触发事件，在这段时间内，如果动作又发生，则无视该动作，直到事件执行完后，才能重新触发。",
+              "节流：动作绑定事件，动作发生后一段时间后触发事件，在这段时间内，如果动作又发生，则无视该动作，直到事件执行完后，才能重新触发。",
+          link: "https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/5"
+        },
+
+        {
+          class: "js",
+          title: "介绍下 Set、Map、WeakSet 和 WeakMap 的区别",
+          answer:"",
+          analysis: "Set</br>" +
+              "1.成员不能重复</br>" +
+              "2.健值相同，有点类似数组。</br>" +
+              "3. 可以遍历，方法有add, delete,has</br>" +
+              "weakSet</br>" +
+              "成员都是对象</br>" +
+              "成员都是弱引用，随时可以消失。 可以用来保存DOM节点，不容易造成内存泄漏</br>" +
+              "不能遍历，方法有add, delete,has</br>" +
+              "Map</br>" +
+              "本质上是健值对的集合，类似集合</br>" +
+              "可以遍历，方法很多，可以干跟各种数据格式转换</br>" +
+              "weakMap</br>" +
+              "1.直接受对象作为健名（null除外），不接受其他类型的值作为健名</br>" +
+              "健名所指向的对象，不计入垃圾回收机制</br>" +
+              "不能遍历，方法同get,set,has,delete</br>",
           link: "https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/5"
         },
       ]
@@ -51,17 +73,29 @@ export default {
 .list {
   list-style: none;
   max-width: 600px;
-  .number, .class {
-    font-weight: bolder;
-  }
-  .title{
-    margin-left: 10px;
-    font-weight: bolder;
-  }
-  .analysis{
-    border: 1px solid #eeecec;
-    padding: 10px;
-    background: #f5f5f5;
+
+  li {
+    margin-bottom: 20px;
+
+    .number, .class {
+      font-weight: bolder;
+    }
+    a{
+      text-decoration: none;
+      color: #a16a6a;
+      margin-left: 10px;
+      font-size: 12px;
+    }
+    .title {
+      margin-left: 10px;
+      font-weight: bolder;
+    }
+
+    .analysis {
+      border: 1px solid #eeecec;
+      padding: 10px;
+      background: #f5f5f5;
+    }
   }
 }
 </style>
