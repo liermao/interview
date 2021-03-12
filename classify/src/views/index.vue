@@ -63,6 +63,16 @@ export default {
               "不能遍历，方法同get,set,has,delete</br>",
           link: "https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/5"
         },
+        {
+          class: "js",
+          title: "介绍下深度优先遍历和广度优先遍历，如何实现？",
+          answer: "对于算法来说 无非就是时间换空间 空间换时间" +
+              "深度优先(DFS)不需要记住所有的节点, 所以占用空间小, 而广度优先需要先记录所有的节点占用空间大" +
+              "深度优先有回溯的操作(没有路走了需要回头)所以相对而言时间会长一点" +
+              "深度优先采用的是堆栈的形式, 即先进后出" +
+              "广度优先(BFC)则采用的是队列的形式, 即先进先出",
+          link: "https://www.cnblogs.com/zzsdream/p/11322060.html"
+        },
       ]
     }
   }
