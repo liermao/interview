@@ -73,6 +73,18 @@ export default {
               "广度优先(BFC)则采用的是队列的形式, 即先进先出",
           link: "https://www.cnblogs.com/zzsdream/p/11322060.html"
         },
+        {
+          class: "js",
+          title: "请分别用深度优先思想和广度优先思想实现一个拷贝函数？",
+          answer: "答案见链接",
+          link: "https://blog.csdn.net/qq_46299172/article/details/108545861"
+        },
+        {
+          class: "js",
+          title: "ES5/ES6 的继承除了写法以外还有什么区别？",
+          answer: "区别于ES5的继承，ES6的继承实现在于使用super关键字调用父类，反观ES5是通过call或者apply回调方法调用父类。",
+          link: "https://blog.csdn.net/weixin_44195250/article/details/102809672?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-1.control&dist_request_id=1328642.52040.16157881689617531&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-1.control"
+        },
       ]
     }
   }
