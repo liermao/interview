@@ -85,6 +85,18 @@ export default {
           answer: "区别于ES5的继承，ES6的继承实现在于使用super关键字调用父类，反观ES5是通过call或者apply回调方法调用父类。",
           link: "https://blog.csdn.net/weixin_44195250/article/details/102809672?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-1.control&dist_request_id=1328642.52040.16157881689617531&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-1.control"
         },
+        {
+          class: "js",
+          title: "setTimeout、Promise、Async/Await 的区别",
+          answer: "setTimeout是宏时间队列。在主执行栈执行完之后才执行。" +
+              "promise本身是同步的立即执行函数" +
+              "在执行resolve()或者reject的时候，此时是异步操作，会先执行then/catch等，等主栈完成后，才会去执行resolve()/reject中的方法" +
+              "async函数返回一个promise对象，当函数执行的时候，一旦遇到await就会先返回，等到触发的异步操作完成(await的函数)，" +
+              "在执行函数体后面的语句，可以理解为，async让除了线程，跳出了async函数体，因此await函数的后的语句相当于在then的回调中执行。" +
+              "await的含义为等待，也就是async函数需要等到await后的函数执行完成并且有了返回结果（promise对象之后），才能继续执行下面的代码。" +
+              "await通过返回一个promise来实现同步效果。",
+          link: "https://blog.csdn.net/qq_46299172/article/details/108545861"
+        },
       ]
     }
   }
