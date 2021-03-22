@@ -101,7 +101,13 @@ export default {
           class: "js",
           title: "异步笔试题",
           answer: "请写出下面代码的结果（答案详情看js）",
-          link: ""
+          link: "https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/7"
+        },
+        {
+          class: "js",
+          title: "var arr = [ [1, 2, 2], [3, 4, 5, 5], [6, 7, 8, 9, [11, 12, [12, 13, [14] ] ] ], 10];编写一个程序将数组扁平化去并除其中重复部分数据，最终得到一个升序且不重复的数组",
+          answer: "Array.from(new Set(arr.flat(Infinity))).sort((a,b)=>{ return a-b})",
+          link: "https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/7"
         },
       ]
     }
