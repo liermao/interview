@@ -97,6 +97,12 @@ export default {
               "await通过返回一个promise来实现同步效果。",
           link: "https://blog.csdn.net/qq_46299172/article/details/108545861"
         },
+        {
+          class: "js",
+          title: "异步笔试题",
+          answer: "请写出下面代码的结果（答案详情看js）",
+          link: ""
+        },
       ]
     }
   }
