@@ -109,6 +109,12 @@ export default {
           answer: "Array.from(new Set(arr.flat(Infinity))).sort((a,b)=>{ return a-b})",
           link: "https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/7"
         },
+        {
+          class: "js",
+          title: "js异步解决方案的发展历程以及优缺点。",
+          answer: "答案见链接",
+          link: "https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/11"
+        },
       ]
     }
   }
