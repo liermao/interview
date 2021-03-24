@@ -115,6 +115,12 @@ export default {
           answer: "答案见链接",
           link: "https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/11"
         },
+        {
+          class: "js",
+          title: "Promise 构造函数是同步执行还是异步执行，那么 then 方法呢？",
+          answer: "promise 构造函数是同步执行的。then是异步的.",
+          link: "https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/19"
+        },
       ]
     }
   }
