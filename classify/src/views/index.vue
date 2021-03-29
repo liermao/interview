@@ -121,6 +121,21 @@ export default {
           answer: "promise 构造函数是同步执行的。then是异步的.",
           link: "https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/19"
         },
+        {
+          class: "js",
+          title: "简单讲解一下http2的多路复用？",
+          answer: "http2采用了二进制格式传输，取代了http1.x的文本格式。二进制的格式解析更高效。" +
+              "多路复用代替了http1.x的序列喝阻塞机制。所有相同的域名请求都通过一个tcp连接并发完成。" +
+              "在http1.x中，多个请求需要多个TCP链接，浏览器为了控制资源会有6-8个TCP连接都限制",
+          link: "https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/14"
+        },
+        {
+          class: "js",
+          title: "介绍下 npm 模块安装机制，为什么输入 npm install 就可以自动安装对应的模块？",
+          answer: "发出npm install指令，查询node_modules目录中是否已经存在指定模块， 若存在，不安装。若不存在，" +
+              "npm像registry查询模块以及压缩包的网址。下载压缩包，存放在根目录下的.npm目录里，解压压缩包到当前的node_modules里。",
+          link: "https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/14"
+        },
       ]
     }
   }
