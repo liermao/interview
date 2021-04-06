@@ -136,6 +136,18 @@ export default {
               "npm像registry查询模块以及压缩包的网址。下载压缩包，存放在根目录下的.npm目录里，解压压缩包到当前的node_modules里。",
           link: "https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/14"
         },
+        {
+          class: "css",
+          title: "介绍下重绘和回流（Repaint & Reflow），以及如何进行优化",
+          answer: "详情看js文件",
+          link: "https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/24"
+        },
+        {
+          class: "js",
+          title: "介绍下观察者模式和订阅-发布模式的区别，各自适用于什么场景 ",
+          answer: "观察着模式中，主体和观察者是相互感知的，发布-订阅着模式是借助第三方来实现调度，发布者和订阅者相互不感知。",
+          link: "https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/24"
+        },
       ]
     }
   }
