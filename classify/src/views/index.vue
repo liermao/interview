@@ -146,7 +146,7 @@ export default {
           class: "js",
           title: "介绍下观察者模式和订阅-发布模式的区别，各自适用于什么场景 ",
           answer: "观察着模式中，主体和观察者是相互感知的，发布-订阅着模式是借助第三方来实现调度，发布者和订阅者相互不感知。",
-          link: "https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/24"
+          link: "https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/25"
         },
       ]
     }
